@@ -4,9 +4,10 @@ import os
 import shutil
 from pathlib import Path
 
+x = input('What folder do you want to clean? ')
 
 # The path for listing items
-path = '/Users/chrisbowen/Downloads/'
+path = '/Users/chrisbowen/' + x + '/'
 
 
 # To be implemented. Run through the dict
@@ -90,3 +91,4 @@ for filename in files:
         folder_name = "SQL Files"
         move_files(folder_name, filename)
 
+print("Completed...")
